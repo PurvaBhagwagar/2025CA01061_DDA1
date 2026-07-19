@@ -1,0 +1,3 @@
++ echo -n x
++ sudo tee /dev/bits7seg0
+xtee: /dev/bits7seg0: Invalid argument

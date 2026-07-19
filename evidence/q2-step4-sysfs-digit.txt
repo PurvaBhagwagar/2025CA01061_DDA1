@@ -1,0 +1,5 @@
++ sudo tee /sys/class/bits7seg/bits7seg2/digit
++ echo 3
+3
++ sudo cat /dev/bits7seg2
+digit=3 en=1 blank=0

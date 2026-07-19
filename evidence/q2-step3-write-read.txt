@@ -1,0 +1,6 @@
++ sudo tee /dev/bits7seg2
++ echo -n 7
+7+ echo
+
++ sudo cat /dev/bits7seg2
+digit=7 en=1 blank=0

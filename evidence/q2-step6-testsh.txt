@@ -1,0 +1,32 @@
++ sudo ./test.sh
+=== [1] Device nodes ===
+crw------- 1 root root 240, 0 Jul 19 14:11 /dev/bits7seg0
+crw------- 1 root root 240, 1 Jul 19 14:11 /dev/bits7seg1
+crw------- 1 root root 240, 2 Jul 19 14:11 /dev/bits7seg2
+crw------- 1 root root 240, 3 Jul 19 14:11 /dev/bits7seg3
+
+=== [2] Dynamic major ===
+240 bits7seg
+
+=== [3] Write a distinct digit to each minor, then read it back ===
+-- /dev/bits7seg0 : write 1 --
+-- /dev/bits7seg0 : read --
+digit=1 en=1 blank=0
+-- /dev/bits7seg1 : write 2 --
+-- /dev/bits7seg1 : read --
+digit=2 en=1 blank=0
+-- /dev/bits7seg2 : write 3 --
+-- /dev/bits7seg2 : read --
+digit=3 en=1 blank=0
+-- /dev/bits7seg3 : write 4 --
+-- /dev/bits7seg3 : read --
+digit=4 en=1 blank=0
+
+=== [4] Poke digit through sysfs on minor 2 ===
+3
+digit=3 en=1 blank=0
+
+=== [5] -EINVAL path: invalid byte on minor 0 ===
+OK: write correctly rejected with -EINVAL
+
+=== all bits7seg tests passed ===

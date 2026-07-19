@@ -1,0 +1,5 @@
++ grep --color=auto bits
++ lsmod
+bitsfeed               12288  0
+bitscore               12288  1 bitsfeed
+bits7seg               12288  0

@@ -1,0 +1,2 @@
++ grep --color=auto bits7seg /proc/devices
+240 bits7seg

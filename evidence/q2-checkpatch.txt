@@ -1,0 +1,22 @@
++ perl /home/purva/tools/kernel-scripts/scripts/checkpatch.pl --file --no-tree bits7seg.c
+WARNING: Block comments use a trailing */ on a separate line
+#156: FILE: bits7seg.c:156:
++ * ERRORs) are expected and accepted per assignment instructions. */
+
+WARNING: LINUX_VERSION_CODE should be avoided, code should be for the version to which it is merged
+#157: FILE: bits7seg.c:157:
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)
+
+WARNING: Comparisons should place the constant on the right side of the test
+#157: FILE: bits7seg.c:157:
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)
+
+total: 0 errors, 3 warnings, 271 lines checked
+
+NOTE: For some of the reported defects, checkpatch may be able to
+      mechanically convert to the typical style using --fix or --fix-inplace.
+
+bits7seg.c has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.

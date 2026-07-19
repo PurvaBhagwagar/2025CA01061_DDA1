@@ -1,0 +1,15 @@
++ sudo rmmod bits7seg
++ ls --color=auto '/dev/bits7seg*'
+ls: cannot access '/dev/bits7seg*': No such file or directory
++ sudo dmesg
++ tail -10
+[15370.264594] bitsfeed: Unknown symbol bitscore_sample_avg (err -2)
+[15370.384597] bitscore: loaded, sample store ready (capacity=64)
+[15370.476455] bitsfeed: fed 8 samples, total count=8 avg=48
+[15384.749683] bitsfeed: unloaded
+[15384.795470] bitscore: unloaded
+[15384.978415] bitscore: loaded, sample store ready (capacity=64)
+[15385.043638] bitsfeed: fed 5 samples, total count=5 avg=54
+[15385.303583] bitsfeed: unloaded
+[15385.336408] bitscore: unloaded
+[15393.809994] bits7seg: unloaded

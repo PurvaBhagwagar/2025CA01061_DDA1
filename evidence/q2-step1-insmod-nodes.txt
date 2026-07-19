@@ -1,0 +1,2 @@
++ sudo insmod ./bits7seg.ko
+insmod: ERROR: could not insert module ./bits7seg.ko: File exists

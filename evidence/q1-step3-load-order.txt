@@ -1,0 +1,2 @@
++ sudo insmod ./bitscore.ko
++ sudo insmod ./bitsfeed.ko nsamples=8

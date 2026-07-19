@@ -1,0 +1,2 @@
++ sudo rmmod bitscore
+rmmod: ERROR: Module bitscore is in use by: bitsfeed

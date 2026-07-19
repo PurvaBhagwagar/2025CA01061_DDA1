@@ -1,0 +1,12 @@
++ sudo make install
+make -C /lib/modules/6.8.0-94-generic/build M=/home/purva/bits-ddrv-2025CA01061/ch04-stack modules_install
+make[1]: Entering directory '/usr/src/linux-headers-6.8.0-94-generic'
+  INSTALL /lib/modules/6.8.0-94-generic/updates/bitscore.ko
+  SIGN    /lib/modules/6.8.0-94-generic/updates/bitscore.ko
+  INSTALL /lib/modules/6.8.0-94-generic/updates/bitsfeed.ko
+  SIGN    /lib/modules/6.8.0-94-generic/updates/bitsfeed.ko
+  DEPMOD  /lib/modules/6.8.0-94-generic
+Warning: modules_install: missing 'System.map' file. Skipping depmod.
+make[1]: Leaving directory '/usr/src/linux-headers-6.8.0-94-generic'
+depmod -a
++ sudo depmod -a

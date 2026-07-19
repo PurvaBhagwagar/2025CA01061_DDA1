@@ -1,0 +1,22 @@
++ tail -20
++ sudo dmesg
+[ 9978.490907] bits7seg: unloaded
+[10003.090170] workqueue: mld_ifc_work hogged CPU for >10000us 16 times, consider switching to WQ_UNBOUND
+[11052.888192] workqueue: css_killed_work_fn hogged CPU for >10000us 8 times, consider switching to WQ_UNBOUND
+[11190.986066] workqueue: atkbd_event_work hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+[11557.938513] kauditd_printk_skb: 7 callbacks suppressed
+[11557.938522] audit: type=1400 audit(1784450136.577:115): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/etc/fstab" pid=4097 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[11560.664302] audit: type=1107 audit(1784450139.299:116): pid=667 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.234" pid=4097 label="snap.firefox.firefox" peer_pid=17049 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[11560.672745] audit: type=1107 audit(1784450139.320:117): pid=667 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.234" pid=4097 label="snap.firefox.firefox" peer_pid=17049 peer_label="unconfined"
+                exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+[11939.456079] bits7seg: loaded, major=240, 4 devices ready
+[12510.826587] workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 4096 times, consider switching to WQ_UNBOUND
+[12743.053732] workqueue: psi_avgs_work hogged CPU for >10000us 64 times, consider switching to WQ_UNBOUND
+[12811.331923] workqueue: ata_sff_pio_task hogged CPU for >10000us 512 times, consider switching to WQ_UNBOUND
+[13115.223243] workqueue: fqdir_free_fn hogged CPU for >10000us 32 times, consider switching to WQ_UNBOUND
+[15370.264023] bitsfeed: Unknown symbol bitscore_add_sample (err -2)
+[15370.264578] bitsfeed: Unknown symbol bitscore_sample_count (err -2)
+[15370.264594] bitsfeed: Unknown symbol bitscore_sample_avg (err -2)
+[15370.384597] bitscore: loaded, sample store ready (capacity=64)
+[15370.476455] bitsfeed: fed 8 samples, total count=8 avg=48

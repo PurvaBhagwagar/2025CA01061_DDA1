@@ -1,0 +1,7 @@
++ sudo modprobe -r bitsfeed
++ sudo modprobe bitsfeed
++ lsmod
++ grep --color=auto bits
+bitsfeed               12288  0
+bitscore               12288  1 bitsfeed
+bits7seg               12288  0

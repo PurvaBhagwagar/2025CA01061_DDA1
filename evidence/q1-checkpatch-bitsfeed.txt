@@ -1,0 +1,4 @@
++ perl /home/purva/tools/kernel-scripts/scripts/checkpatch.pl --file --no-tree bitsfeed.c
+total: 0 errors, 0 warnings, 53 lines checked
+
+bitsfeed.c has no obvious style problems and is ready for submission.

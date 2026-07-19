@@ -1,0 +1,9 @@
+4d050fa ch06: remove stray backup file, add .gitignore for *.bak
+5a25633 ch06: fix checkpatch findings
+f38462c chore: remove build artifacts and duplicate folder, add .gitignore
+278d13e ch04: fix checkpatch findings
+4460b1d ch04: add out-of-tree Makefile and test script
+fe97588 ch04: implement bitsfeed dependent module
+5559b3c ch04: implement bitscore sample store and exported API
+37ac942 ch04: add shared bitscore headers
+ddfe51e docs: add assignment README and repo layout

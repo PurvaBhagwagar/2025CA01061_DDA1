@@ -1,0 +1,4 @@
++ perl /home/purva/tools/kernel-scripts/scripts/checkpatch.pl --file --no-tree stats.c
+total: 0 errors, 0 warnings, 48 lines checked
+
+stats.c has no obvious style problems and is ready for submission.

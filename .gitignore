@@ -10,3 +10,7 @@
 Module.markers
 modules.order
 *.bak
+*.d
+.*.cmd
+Module.symvers
+modules.order

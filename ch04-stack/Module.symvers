@@ -1,0 +1,3 @@
+0xfec356dd	bitscore_add_sample	/home/purva/bits-ddrv-2025CA01061/ch04-stack/bitscore	EXPORT_SYMBOL_GPL	
+0xf49b0479	bitscore_sample_count	/home/purva/bits-ddrv-2025CA01061/ch04-stack/bitscore	EXPORT_SYMBOL_GPL	
+0x9a92b6be	bitscore_sample_avg	/home/purva/bits-ddrv-2025CA01061/ch04-stack/bitscore	EXPORT_SYMBOL_GPL	

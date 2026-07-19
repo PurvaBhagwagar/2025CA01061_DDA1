@@ -9,7 +9,7 @@
 #include "bitscore.h"
 #include "bitscore_internal.h"
 
-/* Shared in-kernel sample store, accessed from stats.c as well */
+/* Shared in-kernel sample store, accessed by core.c and stats.c */
 int bitscore_samples[BITSCORE_MAX_SAMPLES];
 int bitscore_nr_samples;
 DEFINE_SPINLOCK(bitscore_lock);

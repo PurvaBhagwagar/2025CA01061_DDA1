@@ -9,9 +9,6 @@
 #include <linux/device.h>
 #include <linux/uaccess.h>
 #include <linux/slab.h>
-
-/* Type-safe kzalloc for a single object, sized from the pointer itself. */
-#define kzalloc_obj(ptr) ((typeof(ptr))kzalloc(sizeof(*(ptr)), GFP_KERNEL))
 #include <linux/mutex.h>
 #include <linux/bitops.h>
 #include <linux/version.h>
@@ -151,9 +148,6 @@ static DEVICE_ATTR_RW(digit);
 
 static struct class *bits7seg_class_create(void)
 {
-/* Version guard intentional: class_create() signature changed across
- * 6.x kernels this module targets. checkpatch WARNINGs here (not
- * ERRORs) are expected and accepted per assignment instructions. */
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)
 	return class_create("bits7seg");
 #else
@@ -203,7 +197,7 @@ static int __init bits7seg_init(void)
 		dev->minor = i;
 		mutex_init(&dev->lock);
 
-		dev->regs = kzalloc_obj(dev->regs);
+		dev->regs = kzalloc(sizeof(*dev->regs), GFP_KERNEL);
 		if (!dev->regs) {
 			ret = -ENOMEM;
 			goto err_teardown;
